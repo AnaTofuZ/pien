@@ -27,6 +27,6 @@ fn main()   {
 
 fn pien() {
     let mut path = env::home_dir().unwrap();
-    path.push("pien.mp3");
+    path.push(".pien.mp3");
     Command::new("afplay").arg(path).status().expect("failed to execute process");
 }
